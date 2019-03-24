@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fabiano Mayor - Gastronomia</title>
+
+    <link rel='icon' href="images/favicon.png" type='image/x-icon'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/snacks.css">
+</head>
+
+<body>
+
+    <nav class="layout-fixed-menu js-menu">
+        <div>
+            <h2 class="fixed-menu-title">Menu</h2>
+            <h2 class="fixed-menu-close js-close-button">&#10006;</h2>
+        </div>
+        <ul class="fixed-menu">
+
+            <li class="fixed-menu-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="about-me.html">About Me</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="cakes.html">Cakes</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="fine-sweets.html">Fine Sweets</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="snacks.html">Snacks</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="services.html">Services</a>
+            </li>
+            <li class="fixed-menu-item">
+                <a href="customer-reviews.html">Customer Reviews</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="layout-header">
+        <nav class="top-bar">
+            <div class="container">
+                <img class="button-menu-image js-switch-button" src="images/menu-small.png" width="32" height="32" alt="Menu" />
+                <div class="navigation-menu">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="about-me.html">About Me</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/fabianomayorgastronomia/" target="_blank"><img class="social-media-icon"
+                            src="images/facebook-small.png" width="24" height="24" alt="Facebook" /></a>
+                    <a href="https://www.youtube.com/fabianomayorgastronomia/" target="_blank"><img class="social-media-icon"
+                            src="images/youtube-small.png" width="24" height="24" alt="YouTube" /></a>
+                    <a href="mailto:fabianomayor@gmail.com"><img class="social-media-icon" src="images/email-small.png"
+                            width="24" height="24" alt="Email" /></a>
+                </div>
+            </div>
+        </nav>
+        <div class="main-header">
+            <div class="container">
+                <div class="main-header-logo"><img class="logo" src="images/logo-new.png" width="350" height="139" alt="Logo" />
+                </div>
+            </div>
+        </div>
+        <nav class="menu-bar">
+            <div class="container">
+                <div class="navigation-menu-bar">
+                    <ul class="menu menu--middle">
+                        <li class="menu-item menu-item--middle">
+                            <a href="cakes.html">Cakes</a>
+                        </li>
+                        <li class="menu-item menu-item--middle">
+                            <a href="fine-sweets.html">Fine Sweets</a>
+                        </li>
+                        <li class="menu-item menu-item--middle">
+                            <a href="snacks.html">Snacks</a>
+                        </li>
+                        <li class="menu-item menu-item--middle">
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li class="menu-item menu-item--middle">
+                            <a href="customer-reviews.html">Customer Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="imageArea" class="image-area">
+        <span class="close">&times;</span>
+        <img class="image-area-content" id="imageContent" src="./images/image-not-available.jpg" alt="">
+        <div id="caption"></div>
+    </div>
+    <main class="layout-snacks">
+        <div class="snacks-picture">
+            <div class="container">
+                <img class="snacks-img-header" src="images/snacks.jpg" width="950" height="200" alt="Snacks" />
+            </div>
+        </div>
+        <div class="snacks-text">
+            <div class="container">
+                <blockquote>My brazilian inspired party snacks are a must in every party, with diferent shapes, sizes
+                    and flavours it can fulfill everyones savoury needs, from the famous <i>coxinha</i> to the perfect
+                    prawn tartlet.</blockquote>
+            </div>
+        </div>
+        <div class="container">
+            <article class="snacks">
+                <div class="container">
+                    <div class="row">
+                        <h2>Our Snacks</h2>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="plan-snacks">
+                                <img class="increase-image" src="images/snacks-salmon.jpg" width="330" height="260" alt="Salmon Snacks"
+                                    onclick="openImage(this.src, this.alt)" />
+                                <h3>Salmon Crostini</h3>
+                                <p>Thin slices of toasted bread, brushed with olive oil topped with smoked salmon.
+                                    Elegant and tasty!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="plan-snacks">
+                                <img class="increase-image" src="images/snacks-bruschetta.jpg" width="330" height="260"
+                                    alt="Bruschetta" onclick="openImage(this.src, this.alt)" />
+                                <h3>Bruschetta</h3>
+                                <p>Thick slices of bread grilled, drizzled with olive oil, and topped with tomatoes and
+                                    cream cheese. Delicious appetizer!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="plan-snacks">
+                                <img class="increase-image" src="images/snacks-potato-bacon.jpg" width="330" height="260"
+                                    alt="Potato Bacon" onclick="openImage(this.src, this.alt)" />
+                                <h3>Potato Rounds</h3>
+                                <p>Baked potato rounds topped with cream cheease and bacon. A great and tasty
+                                    combination!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="plan-snacks">
+                                <img class="increase-image" src="images/snacks-mini-quiche.jpg" width="330" height="260"
+                                    alt="Mini Quiche" onclick="openImage(this.src, this.alt)" />
+                                <h3>Mini Quiche</h3>
+                                <p>Small tart shells filled with cheese and bacon creating a hearty mini quiche for
+                                    brunches or dinner parties.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="plan-snacks">
+                                <img src="images/snacks-coxinha.jpg" width="330" height="260" alt="Coxinha" onclick="openImage(this.src, this.alt)" />
+                                <h3>Coxinha</h3>
+                                <p>Popular Brazilian snack made of chopped chicken meat covered in
+                                    dough, molded into a shape of a chicken leg battered and fried.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="plan-snacks">
+                                <img src="images/snacks-cheese-balls.jpg" width="330" height="260" alt="Cheese Balls"
+                                    onclick="openImage(this.src, this.alt)" />
+                                <h3>Cheese Balls</h3>
+                                <p>Very popular snack in Brazil consisting of a cheese spread in the shape of a ball.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <button onclick="goTop()" id="top-button" title="Page Top">Top</button>
+    <footer class="layout-footer">
+        <div class="container">
+            <div class="footer-media">
+                <ul class="menu menu--media">
+                    <li class="menu-item menu-item--media">
+                        <img src="images/whatsapp-small.png" width="24" height="24" alt="Fabiano Mayor" />
+                        +353 (83) 461 9694
+                    </li>
+                    <li class="menu-item menu-item--media">
+                        <a href="mailto:fabianomayor@gmail.com"><img src="images/email-small.png" width="24" height="24"
+                                alt="Fabiano Mayor" />fabianomayor@gmail.com</a>
+                    </li>
+                    <li class="menu-item menu-item--media">
+                        <a href="https://www.facebook.com/FabianoMayorgastronomia/" target="_blank"><img src="images/facebook-small.png"
+                                width="24" height="24" alt="Fabiano Mayor" />facebook.com/fabianomayorgastronomia</a>
+                    </li>
+                    <li class="menu-item menu-item--media">
+                        <a href="https://www.youtube.com/fabianomayorgastronomia" target="_blank"><img src="images/youtube-small.png"
+                                width="24" height="24" alt="Fabiano Mayor" />youtube.com/fabianomayorgastronomia</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <p><img src="images/logo-small.png" width="60" height="113" alt="Fabiano Mayor" /></p>
+                <h3>Fabiano Mayor Gastronomia</h3>
+            </div>
+
+        </div>
+    </footer>
+    <footer class="copyright">
+        <p>&copy; Fabiano Mayor Gastronomia</p>
+    </footer>
+
+    <script src="scripts/alternate.js"></script>
+    <script src="scripts/top-button.js"></script>
+    <script src="scripts/open-image.js"></script>
+
+</body>
+
+</html>

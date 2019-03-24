@@ -1,0 +1,73 @@
+/*-------------------------*\
+ CUSTOMER REVIEWS
+\*-------------------------*/
+
+.layout-customer-reviews {
+    font-size: 1em;
+    padding: 30px 20px 0 20px;
+    text-align: center;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.layout-customer-reviews img {
+    width: 905px;
+    height: 205px;
+    padding: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+iframe {
+    padding: 5px;
+    width: 500px;
+    height: 360px;
+    border: none;
+    overflow:hidden;
+}
+
+@media(max-width: 1199px) {
+    .layout-customer-reviews {
+        height: auto;
+    }
+}
+
+@media(max-width: 991px) {
+    .layout-customer-reviews img {
+        width: 715px;
+        height: auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .layout-customer-reviews img {
+        width: 535px;
+        height: auto;
+    }
+}
+
+@media(max-width: 575px) {
+    
+    .layout-customer-reviews {
+        height: auto;
+        padding-left: 0;
+    }
+    
+    .layout-customer-reviews img {
+        width: 335px;
+        height: auto;
+    }
+
+    iframe {
+        width: 340px;
+        height: 350px;
+    }
+
+    .iframe-longer { 
+        height: 370px;
+     }
+
+     iframe:last-of-type { 
+        height: 400px;
+      }
+}

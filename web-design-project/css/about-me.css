@@ -1,0 +1,48 @@
+/*-------------------------*\
+ ABOUT ME
+\*-------------------------*/
+
+.layout-about-me {
+    padding: 30px 0 0 0;
+    text-align: left;
+    height: auto;
+}
+
+.about-me-text h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.about-me-text {
+    padding: 10px 0 0 0;
+    text-align: left;
+}
+
+.about-me-image {
+    text-align: center;
+}
+
+.about-me-image img {
+    width: 340px;
+    height: 510px;
+    padding: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width: 991px) {
+
+    .about-me-text {
+        padding: 0 0 20px 0;
+    }
+
+}
+
+@media(max-width: 575px) {
+
+    .about-me-image img {
+        width: 300px;
+        height: auto;
+    }
+
+}

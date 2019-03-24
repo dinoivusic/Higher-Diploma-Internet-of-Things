@@ -1,0 +1,529 @@
+/*-------------------------*\
+  FONTS
+\*-------------------------*/
+
+@font-face {
+    font-family: "Dosis-Book";
+    src: url("../fonts/Dosis-SemiBold.woff") format("woff");
+}
+
+/*-------------------------*\
+  PAGE
+\*-------------------------*/
+
+html {
+    font-size: 62.5%;
+    /* 62.5% from browser default = 10px */
+}
+
+body {
+    /* positioning */
+    /* Display and box model */
+    margin: 0;
+    /* colors */
+    color: #444444;
+    background-color: #f3f2e9;
+    /* text */
+    font-family: "Dosis-Book", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    /* others */
+}
+
+blockquote {
+    font-size: 2.1rem;
+}
+
+/*-------------------------*\
+  FIXED MENU
+\*-------------------------*/
+
+.layout-fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    width: 200px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    z-index: 9999;
+    overflow: auto;
+}
+
+.fixed-menu-title {
+    width: 144px;
+    float: left;
+}
+
+.fixed-menu-close {
+    width: 55px;
+    float: right;
+    cursor: pointer;
+}
+
+.layout-fixed-menu h2 {
+    line-height: 42px;
+    padding: 0 0 0 20px;
+    margin: 0;
+    background-color: #f3f2e9;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.fixed-menu {
+    list-style: none;
+    padding: 20px 0 0 20px;
+    clear: both;
+}
+
+.fixed-menu-item {
+    padding: 0 0 20px 0;
+}
+
+.show--menu {
+    display: block;
+}
+
+.fixed-menu-item a {
+    color: #504133;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.fixed-menu-item a:hover {
+    color: #c4c4c4;
+}
+
+@media(max-width: 767px) {
+    .top-bar .button-menu-image {
+        margin-top: 7.5px;
+        width: 27px;
+        height: auto;
+    }
+    .social-media img {
+        width: 20px;
+        height: auto;
+    }
+}
+
+/*-------------------------*\
+  TOP BAR
+\*-------------------------*/
+
+.top-bar {
+    background-color: #504133;
+    height: 42px;
+    border-bottom: 1px solid #2e261d;
+}
+
+.navigation-menu {
+    float: left;
+}
+
+@media(max-width: 575px) {
+    .navigation-menu {
+        display: none;
+    }
+}
+
+/*-------------------------*\
+  MAIN HEADER
+\*-------------------------*/
+
+.main-header {
+    width: 100%;
+    height: 165px;
+    background-color: #fafafa;
+}
+
+.main-header-logo {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    .main-header-logo img {
+        width: 320px;
+        height: auto;
+    }
+}
+
+@media(max-width: 575px) {
+    .main-header {
+        height: 140px;
+    }
+}
+
+/*-------------------------*\
+  MENU MIDDLE
+\*-------------------------*/
+
+.menu {
+    margin: 0;
+    line-height: 42px;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.menu--middle {
+    margin-right: 22px;
+}
+
+.menu-item {
+    vertical-align: top;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menu-item a {
+    color: #fafafa;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: #c4c4c4;
+}
+
+.menu-item--middle a {
+    margin: 0 20px 0px 20px;
+    color: #504133;
+    text-shadow: 1px 1px #c4c4c4;
+}
+
+.menu-item--middle a:hover {
+    text-shadow: 1px 1px #504133;
+}
+
+.menu-bar {
+    text-align: center;
+    height: 40px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #504133;
+    clear: both;
+}
+
+@media(max-width: 991px) {
+    .menu-item--middle a {
+        margin: 0 10px 0px 10px;
+    }
+}
+
+@media(max-width: 767px) {
+    .menu-item {
+        padding-right: 10px;
+    }
+    .menu-item a {
+        font-size: 1.2em;
+    }
+    .menu--middle {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media(max-width: 575px) {
+    .menu--middle {
+        display: none;
+    }
+}
+
+/*-------------------------*\
+  BUTTONS
+\*-------------------------*/
+
+.button-menu-image {
+    float: left;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/*-------------------------*\
+  SOCIAL MEDIA
+\*-------------------------*/
+
+.social-media {
+    float: right;
+    padding: 6px 0;
+}
+
+.social-media-icon {
+    margin-left: 14px;
+}
+
+/*-------------------------*\
+  SLIDESHOW
+\*-------------------------*/
+
+.slideshow {
+    border-bottom: 1px solid #504133;
+}
+
+#slides {
+    position: relative;
+    margin: 30px auto;
+    width: 810px;
+    height: 374px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+@media(max-width: 991px) {
+    #slides {
+        width: 710px;
+        height: 328px;
+    }
+    #slides img {
+        margin: 0 10px 0px 10px;
+        width: 700px;
+        height: auto;
+    }
+    .slide {
+        position: absolute;
+        left: -5px;
+        top: 5px;
+    }
+}
+
+@media(max-width: 767px) {
+    #slides {
+        width: 530px;
+        height: 246px;
+    }
+    #slides img {
+        margin: 0 10px 0px 10px;
+        width: 520px;
+        height: auto;
+    }
+}
+
+@media(max-width: 575px) {
+    #slides {
+        width: 331px;
+        height: 156px;
+    }
+    #slides img {
+        margin: 0 10px 0px 10px;
+        width: 321px;
+        height: auto;
+    }
+}
+
+/*-------------------------*\
+  FOOTER
+\*-------------------------*/
+
+.layout-footer::before {
+    clear: both;
+}
+
+.layout-footer {
+    height: 220px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #504133;
+    color: #fafafa;
+    border-top: 1px solid #2e261d;
+}
+
+.footer-media {
+    width: 60%;
+    float: left;
+}
+
+.footer-logo {
+    width: 30%;
+    float: right;
+}
+
+.layout-footer a {
+    font-size: 1em;
+}
+
+.layout-footer h3 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.layout-footer p {
+    text-align: center;
+}
+
+.layout-footer .menu--media {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.menu--media {
+    padding-left: 0;
+}
+
+.menu-item--media {
+    text-align: left;
+    padding: 0;
+    font-size: 1.3em;
+    display: list-item;
+    height: 40px;
+    margin: 0 20px 0 0;
+}
+
+.menu-item--media img {
+    margin: 0 20px 4px 0;
+}
+
+.copyright {
+    width: 100%;
+    border-top: 1px solid #2e261d;
+}
+
+.copyright p {
+    margin: auto;
+    width: 175px;
+    line-height: 24px;
+    font-size: 0.8em;
+}
+
+@media(max-width: 767px) {
+    .footer-logo {
+        width: 30%;
+    }
+    .menu-item--media {
+        font-size: 1em;
+    }
+    .layout-footer h3 {
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 575px) {
+
+    .layout-footer h3 {
+        display: none;
+    }
+
+    .footer-media {
+        padding-left: 8px;
+        width: 80%;
+        float: left;
+    }
+    .footer-logo {
+        margin-top: -10px;
+        width: 20%;
+    }
+    .menu-item--media {
+        margin: 0;
+    }
+    .menu-item--media img {
+        width: 20px;
+        height: auto;
+        margin: 0 5px 4px 0;
+    }
+}
+
+/*-------------------------*\
+  TOP BUTTON
+\*-------------------------*/
+
+#top-button {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  opacity: 0.6;
+  background-color: #2e261d;
+  color: #fafafa;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#top-button:hover {
+  background-color: #555555;
+}
+
+/*-------------------------*\
+  OPEN IMAGE
+\*-------------------------*/
+
+.increase-image {
+    cursor: pointer;
+}
+
+.image-area {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.image-area-content {
+    margin: auto;
+    display: block;
+    max-width: 800px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #fafafa;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fafafa;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .image-area-content {
+        max-width: 90%;
+    }
+}
